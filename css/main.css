@@ -1,0 +1,210 @@
+body {
+    /*Color fondo*/
+    background-color: white;
+    /*Margen predeterminado*/
+    margin: 0;
+    /*Margen para adentro*/
+    padding: 0;
+    /*Tamano del texto*/
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/************************************************************************/
+/*NAVEGACION*/
+
+header{
+    /*Ancho de la pantalla*/
+    width: 100%;
+    /*Largo de la pantalla*/
+    height: 55px;
+}
+ /*Entrar primero al elemento padre*/
+header nav{
+    /*background-color: azure; /*Visualizar que haces*/
+    /* Como se pueden mover los elementos Justificar los elementos, donde flex es flexible*/
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+/*nuevo selector*/
+
+header nav .right-nav{
+    /*background-color: coral;*/
+    /*Eliminar las vinetas*/
+    list-style: none;
+    /*ancho*/
+    width: 200px;
+    /*libertad para mover los elementos*/
+    display: flex;
+    /*justificar largo*/
+    justify-content: center;
+    /*justificar ancho*/
+    align-items: center;
+    /*altura definida segun los elementos*/
+    height: auto;
+}
+nav .right-nav a{
+    /*color del texto*/
+    color: rgb(20, 19, 19);
+    /*quitar el subrayado*/
+    text-decoration: none;
+    /*anadir separacion mediante anadir un margen*/
+    margin-right: 25px;
+}
+nav .right-nav .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*tamano del icono*/
+    width: 20px;
+    height: 20px;
+    /*automaticamente contiene el icono dentro de la caja*/
+    background-size: contain;
+}
+nav .right-nav img{
+    /*margin left margen a la izquierda */
+    margin-left: 20px;
+    /*radio de la imagen*/
+    border-radius: 35px;
+    /*ancho*/
+    width: 35px;
+}
+/********************************************************************************************************/
+/*Main*/
+main{
+    text-align: center; /*alinear todo lo de main*/
+    margin-top: 150px; /*espaciado entre cosas*/
+}
+main .main-logo img{/*llamar la clase*/
+    width: 430px; /*ancho del cuadro*/
+    height: 130px;
+    /*background-color: aquamarine;*/
+    margin: 0 auto;
+    margin-bottom: 40px; /*separar el logo del buscador*/
+}
+/*imagen google*/
+main .main-logo img{
+    height: 150 px;
+}
+/*input*/
+main .main-input{
+    /*background-color: brown;*/
+    width:530px;
+    margin: 0 auto; /*centrar altura automatica margen*/
+    margin-bottom: 40px; /*margen abajo separando botones*/
+}
+/*cajita gris redondear*/
+main .main-input-container{
+    /*background-color: chartreuse;*/
+    /*ancho   linea solida (estilo)   color*/
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    width: 525px;
+    display: flex; /*mover libremente*/
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{ /*elemento madre*/
+    height: 35px;
+    border: none; /*quitar borde negro*/
+    outline: none; /*quitar borde aazul al input*/
+    width: 500px;}
+main .main-input .search-icon{
+    /*PONER IMAGEN*/
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    /*COLOCAR EN CENTRO DEL CUBO*/
+    background-position: center; 
+    width: 17px;
+    height: 17px;
+    background-size: contain; /*icono contenido en el espacio*/
+    padding-left: 8%; /*margen para adentro*/
+    background-repeat: no-repeat;  /*CUANDO REPITE*/
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+main .main-input .cam-icon{
+
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-size: contain; /*icono contenido en el espacio*/
+    background-repeat: no-repeat;  /*CUANDO REPITE*/
+    padding-right: 4%;
+    margin-left: 10px;
+    /*padding-left: 3%;*/
+}
+main .main-button{
+    /*background-color: black;*/
+    width: 550px;
+    /*vertical/horizontal*/
+    margin: 0 auto;
+}
+main .main-button div{
+    /*alinear elementos en la misma linea*/
+    display: inline-block;
+}
+main .main-button button{
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+main .main-input-container:hover{ /*diseno al cursor*/
+    border-color: #dfe1e500;
+    box-shadow: 0 0 5px #20212447;
+}
+main .main-button button:hover{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+/*FOOTER***********************************/
+footer{
+    /*Ancho de la pantalla*/
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: white  ;
+    /*Largo de la pantalla*/
+}
+footer .country p{
+    margin-left: 30px;
+    color: #202124;
+    font-size: 14px;
+}
+footer .others{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 10px 0;
+}
+footer .others a{
+    color: #202124;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+footer .others a:hover{
+    text-decoration: underline;
+
+}
+
+
+/*footer .footer-left{
+    background-color: rgb(49, 37, 163); /*Visualizar que haces*/
+    /* Como se pueden mover los elementos Justificar los elementos, donde flex es flexible
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    list-style: none;*/
